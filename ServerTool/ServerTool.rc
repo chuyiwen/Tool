@@ -1,0 +1,402 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\ServerTool.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ServerTool.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 ServerTool"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "ServerTool，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2011",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_SERVERTOOL_DIALOG DIALOGEX 0, 0, 758, 375
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ServerTool"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CTEXT           "Total：",IDC_TOTAL,7,6,744,10
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,18,38,167,277
+    GROUPBOX        "Login Open",IDC_STATIC,17,321,167,34
+    PUSHBUTTON      "ON",IDC_BUTTON1,33,334,50,14
+    PUSHBUTTON      "OFF",IDC_BUTTON2,116,334,50,14
+    CTEXT           "ServerList",IDC_ServerList,201,27,226,8
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,194,38,422,295
+    PUSHBUTTON      "Refresh",IDC_BUTTON3,632,40,107,51
+    GROUPBOX        "",IDC_STATIC,632,92,106,163
+    GROUPBOX        "Server Open",IDC_STATIC,639,99,94,30
+    PUSHBUTTON      "ON",IDC_BUTTON4,645,109,26,14
+    PUSHBUTTON      "Off",IDC_BUTTON5,701,109,25,14
+    GROUPBOX        "Max User Setting",IDC_STATIC,639,130,93,29
+    EDITTEXT        IDC_EDIT1,645,140,45,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "OK",IDC_BUTTON6,702,140,25,14
+    PUSHBUTTON      "Notice",IDC_BUTTON7,638,176,94,14
+    PUSHBUTTON      "Kick",IDC_BUTTON8,638,195,94,14
+    PUSHBUTTON      "Block",IDC_BUTTON9,638,214,94,14
+    GROUPBOX        "Reward",IDC_STATIC,632,260,106,73
+    LTEXT           "   Exp",IDC_STATIC,642,296,19,8
+    LTEXT           "   Item",IDC_STATIC,642,317,23,8
+    EDITTEXT        IDC_EDIT3,669,294,46,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,669,315,46,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Select All",IDC_BUTTON10,567,341,50,14
+    LTEXT           "Train",IDC_STATIC,649,277,16,8
+    EDITTEXT        IDC_EDIT2,669,273,46,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Dumb",IDC_BUTTON11,639,233,93,14
+    PUSHBUTTON      "",IDC_BUTTON12,718,273,14,14
+    PUSHBUTTON      "",IDC_BUTTON13,718,294,14,14
+    PUSHBUTTON      "",IDC_BUTTON14,718,315,14,14
+END
+
+IDD_BOARDCAST DIALOGEX 0, 0, 316, 254
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Notice"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Start",IDOK,249,225,50,14
+    EDITTEXT        IDC_EDIT1,22,20,274,80,ES_AUTOHSCROLL
+    PUSHBUTTON      "Send",IDC_BUTTON1,245,104,50,14
+    CONTROL         "",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,130,16,10
+    CONTROL         "",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,148,16,10
+    CONTROL         "",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,167,16,10
+    CONTROL         "",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,185,16,10
+    CONTROL         "",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,202,16,10
+    EDITTEXT        IDC_EDIT5,43,146,170,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,43,165,169,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,43,184,169,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,43,203,169,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,219,126,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,219,146,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,219,165,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,219,184,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,219,204,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT12,43,127,169,14,ES_AUTOHSCROLL
+    LTEXT           "min",IDC_STATIC,261,132,12,8
+    LTEXT           "min",IDC_STATIC,261,151,12,8
+    LTEXT           "min",IDC_STATIC,261,170,12,8
+    LTEXT           "min",IDC_STATIC,261,190,12,8
+    LTEXT           "min",IDC_STATIC,261,210,12,8
+END
+
+IDD_KICK DIALOGEX 0, 0, 196, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Kick"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,68,39,50,14
+    PUSHBUTTON      "取消",IDCANCEL,136,38,50,14
+    EDITTEXT        IDC_EDIT1,66,18,118,15,ES_AUTOHSCROLL
+    LTEXT           "Role Name",IDC_STATIC,17,21,38,8
+END
+
+IDD_FORBID DIALOGEX 0, 0, 233, 92
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Forbid"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,90,66,50,14
+    PUSHBUTTON      "取消",IDCANCEL,168,65,50,14
+    EDITTEXT        IDC_EDIT1,85,39,131,14,ES_AUTOHSCROLL
+    LTEXT           "Role Name",IDC_STATIC,24,41,37,8
+    CONTROL         "解除",IDC_UNFORBID,"Button",BS_AUTORADIOBUTTON,169,14,32,10
+    CONTROL         "禁止",IDC_FORBID,"Button",BS_AUTORADIOBUTTON,92,15,32,10
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 208, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Time"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Apply",IDOK,167,14,24,14
+    PUSHBUTTON      "Cancel",IDCANCEL,156,67,37,14
+    EDITTEXT        IDC_EDIT1,102,14,45,14,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "min",IDC_STATIC,152,18,12,8
+    LTEXT           "From",IDC_STATIC,15,46,17,8
+    LTEXT           "To",IDC_STATIC,95,46,9,8
+    EDITTEXT        IDC_EDIT2,34,43,17,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,64,43,17,14,ES_AUTOHSCROLL
+    CTEXT           "：",IDC_STATIC,54,47,9,8
+    EDITTEXT        IDC_EDIT4,107,43,15,14,ES_AUTOHSCROLL
+    LTEXT           "：",IDC_STATIC,127,47,9,8
+    EDITTEXT        IDC_EDIT5,137,43,15,14,ES_AUTOHSCROLL
+    CONTROL         "Apply",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,167,46,34,10
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 254, 106
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,121,71,50,14
+    PUSHBUTTON      "取消",IDCANCEL,180,71,50,14
+    EDITTEXT        IDC_EDIT1,71,31,158,14,ES_AUTOHSCROLL
+    LTEXT           "Role Name",IDC_STATIC,23,33,35,8
+    CONTROL         "On",IDC_ON,"Button",BS_AUTORADIOBUTTON,21,16,25,10
+    CONTROL         "Off",IDC_OFF,"Button",BS_AUTORADIOBUTTON,66,17,27,10
+    EDITTEXT        IDC_EDIT2,172,14,37,14,ES_AUTOHSCROLL
+    LTEXT           "min",IDC_STATIC,212,19,14,8
+    EDITTEXT        IDC_EDIT3,71,51,158,14,ES_AUTOHSCROLL
+    LTEXT           "brief",IDC_STATIC,26,55,16,8
+END
+
+IDD_SHUTDOWN DIALOGEX 0, 0, 175, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,38,37,50,14
+    PUSHBUTTON      "取消",IDCANCEL,107,37,50,14
+    EDITTEXT        IDC_EDIT1,39,17,91,14,ES_AUTOHSCROLL
+    LTEXT           "time",IDC_STATIC,17,20,13,8
+    LTEXT           "min",IDC_STATIC,136,20,12,8
+END
+
+IDD_LOGIN DIALOGEX 0, 0, 214, 102
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,92,68,50,14
+    PUSHBUTTON      "取消",IDCANCEL,146,68,50,14
+    EDITTEXT        IDC_EDIT1,60,14,137,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,59,44,138,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "User",IDC_STATIC,21,19,16,8
+    LTEXT           "Password",IDC_STATIC,21,47,32,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "ServerTool.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "ServerTool.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_SERVERTOOL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 751
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 368
+    END
+
+    IDD_BOARDCAST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 247
+    END
+
+    IDD_KICK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_FORBID, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 247
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_SHUTDOWN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 168
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 ServerTool(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\ServerTool.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
